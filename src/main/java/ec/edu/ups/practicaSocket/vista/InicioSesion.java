@@ -4,7 +4,6 @@
  */
 package ec.edu.ups.practicaSocket.vista;
 
-import ec.edu.ups.practicaSocket.cliente.Cliente;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.logging.Level;

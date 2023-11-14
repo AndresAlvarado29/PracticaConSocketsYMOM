@@ -25,10 +25,8 @@ import javax.swing.text.StyledDocument;
  * @author NALE COMPUTERS
  */
 public class ClienteVista1 extends javax.swing.JFrame implements Observer{
-private int puerto;
 Servidor s;
 Cliente c;
-ClienteV c1;
 
     /**
      * Creates new form Cliente
@@ -133,15 +131,15 @@ ClienteV c1;
        Cliente c2 = new Cliente(6000,codificar(mensaje));
        Cliente c3 = new Cliente(6001,codificar(mensaje));
        Cliente c4 = new Cliente(6002,codificar(mensaje));
-       ClienteV cV = new ClienteV(5000, "192.168.18.61", mensaje);
+       //ClienteV cV = new ClienteV(5000, "192.168.18.61", mensaje);
        Thread t2 = new Thread(c2);
        Thread t3= new Thread(c3);
        Thread t4= new Thread(c4);
-       Thread tV = new Thread(cV);
+       //Thread tV = new Thread(cV);
        t2.start();
        t3.start();
        t4.start();
-       tV.start();
+       //tV.start();
        txtMensaje.setText("");
     }//GEN-LAST:event_jEnviarActionPerformed
 

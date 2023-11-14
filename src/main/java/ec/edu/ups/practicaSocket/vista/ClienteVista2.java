@@ -123,15 +123,15 @@ private Cliente c;
        Cliente c = new Cliente(5000,codificar(mensaje));
        Cliente c3 = new Cliente(6001,codificar(mensaje));
        Cliente c4 = new Cliente(6002,codificar(mensaje));
-       ClienteV cV = new ClienteV(5000, "192.168.18.61", mensaje);
+       //ClienteV cV = new ClienteV(5000, "192.168.18.61", mensaje);
        Thread t = new Thread(c);
        Thread t3= new Thread(c3);
        Thread t4= new Thread(c4);
-       Thread tV = new Thread(cV);
+      // Thread tV = new Thread(cV);
        t.start();
        t3.start();
        t4.start();
-       tV.start();
+       //tV.start();
         txtMensaje.setText("");
     }//GEN-LAST:event_jEnviarActionPerformed
 
